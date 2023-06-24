@@ -55,5 +55,10 @@ sasl.password=< CLUSTER API SECRET >
 
 Prueba de Productor
 ```
-node productor.js getting-started.properties
+node producer.js getting-started.properties
+```
+
+Prueba de Consumidor
+```
+node consumer.js getting-started.properties
 ```
