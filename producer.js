@@ -35,14 +35,13 @@ function createProducer(config, onDeliveryReport) {
 }
 
 async function produceExample() {
-    console.log(process.argv)
   if (process.argv.length < 3) {
     console.log("Please provide the configuration file path as the command line argument");
     process.exit(1);
   }
   let configPath = process.argv.slice(2)[0];
   const config = await configFromPath(configPath);
-  console.log(config)
+
   let topic = "purchases";
 
   let users = [ "eabara", "jsmith", "sgarcia", "jbernard", "htanaka", "awalther" ];
@@ -58,11 +57,9 @@ async function produceExample() {
     }
   });
 
-  console.log("config")
-
   let numEvents = 10;
   for (let idx = 0; idx < numEvents; ++idx) {
-console.log(idx)
+
     const key = users[Math.floor(Math.random() * users.length)];
     const value = Buffer.from(items[Math.floor(Math.random() * items.length)]);
 
