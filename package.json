@@ -1,0 +1,11 @@
+{
+  "name": "playground-confluent",
+  "version": "1.0.0",
+  "description": "## Step by step for this pklayground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
