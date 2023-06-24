@@ -37,5 +37,23 @@ node -v
 npm i node-rdkafka
 ```
 
+### Paso 3: Crear archivo de properties con el nombre de getting-started.properties
+
+Estructura del archivo
+```
+bootstrap.servers=< CLUSTER BOOSTRAP URL>
+security.protocol=SASL_SSL
+sasl.mechanisms=PLAIN
+sasl.username=< CLUSTER API KEY > 
+sasl.password=< CLUSTER API SECRET >
+```
 
 
+### Paso 4: Crear productor y consumidor
+
+### Paso 5: Probar productor y consumidor
+
+Prueba de Productor
+```
+node productor.js getting-started.properties
+```
